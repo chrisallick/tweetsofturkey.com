@@ -71,11 +71,11 @@ $(document).ready(function() {
 
 	$(".langturk").click(function(event){
 		event.preventDefault();
-		$("#main").removeClass("english").addClass("turk");
+		$("#wrapper").removeClass("english").addClass("turk");
 	});
 
 	$(".langenglish").click(function(event){
 		event.preventDefault();
-		$("#main").removeClass("turk").addClass("english");
+		$("#wrapper").removeClass("turk").addClass("english");
 	});
 });

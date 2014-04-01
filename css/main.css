@@ -13,8 +13,8 @@ html, body { width: 100%; height: 100%; background-color: #FD686A; }
 #language a:hover {	color: #ffb3b3; }
 
 #tags { margin: 0 auto; width: 505px; padding-top: 14px; }
-#tags a { float: left; color: #ff6767; font: normal 22px "brandon-grotesque"; font-weight: 900; letter-spacing: 2px; }
-#tags a.first { margin-right: 26px; }
+#tags a, #tags span { float: left; color: #ff6767; font: normal 22px "brandon-grotesque"; font-weight: 900; letter-spacing: 2px; }
+#tags a.first, #tags span.first { margin-right: 26px; }
 #tags a:hover { color: #ffb3b3; }
 
 #social { position: absolute; top: 0px; right: 0px; padding: 15px 57px 0px 0px; }
@@ -32,12 +32,11 @@ html, body { width: 100%; height: 100%; background-color: #FD686A; }
 #main form textarea.last { margin-bottom: 20px; }
 #main form .submit { background-color: #FFF3E2; color: #FD686A; font: normal 22px "brandon-grotesque"; font-weight: 700; padding: 12px 0px 12px 0px; width: 187px; text-align: center; cursor: pointer; }
 
+#wrapper.english .turk { display: none; }
+#wrapper.english .english { display: auto; }
 
-#main.english .turk { display: none; }
-#main.english .english { display: auto; }
-
-#main.turk .english { display: none; }
-#main.turk .turk { display: auto; }
+#wrapper.turk .english { display: none; }
+#wrapper.turk .turk { display: auto; }
 
 /*
 
