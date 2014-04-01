@@ -33,6 +33,18 @@ $(document).ready(function() {
 		if( $(this).val() == "" ) {
 			$(this).val("@example");
 		}
+	}).on('keyup', function(){
+		if( $(this).val() != "Enter your tweet here...") {
+			var length = $(this).val().length; 		
+			var post = $(this).val();
+    		
+    		var offset = checkPostForURL(post);
+    		if ( offset ){  
+        		length = length - offset;
+    		}
+
+    		$("#maketweet .charsleft").text(140-length);
+		}
 	});
 
 	$("#maketweet textarea").focus(function(){
