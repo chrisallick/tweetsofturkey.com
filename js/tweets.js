@@ -11,4 +11,14 @@ function shake() {
 var t;
 $(document).ready(function(){
 	t = setTimeout(shake, 5000);
+
+	$(".langturk").click(function(event){
+		event.preventDefault();
+		$("#wrapper").removeClass("english").addClass("turk");
+	});
+
+	$(".langenglish").click(function(event){
+		event.preventDefault();
+		$("#wrapper").removeClass("turk").addClass("english");
+	});
 });

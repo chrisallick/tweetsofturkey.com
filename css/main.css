@@ -40,6 +40,7 @@ html, body { width: 100%; height: 100%; background-color: #FD686A; }
 #main-tweets .headline h1 { color: #fff3e1; font: normal 87px "brandon-grotesque"; font-weight: 900; letter-spacing: 2px; }
 #main-tweets .headline p { color: #fff3e1; font: normal 21px "brandon-grotesque"; font-weight: 700; letter-spacing: 2px; line-height: 35px; }
 #main-tweets .headline .button { cursor: pointer; position: absolute; top: 0px; right: -250px; width: 186px; height: 185px; background: url("../img/tweethere.png") top left no-repeat; }
+#main-tweets .headline .button_turk { cursor: pointer; position: absolute; top: 0px; right: -250px; width: 186px; height: 185px; background: url("../img/tweethere_turk.png") top left no-repeat; }
 
 #tweets { width: 834px; margin: 0 auto; }
 #tweets .tweet { margin-bottom: 70px; position: relative; }
