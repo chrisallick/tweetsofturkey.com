@@ -2,7 +2,7 @@ html, body { width: 100%; height: 100%; background-color: #FD686A; }
 
 * { outline: none; }
 
-.shrink { -webkit-transform: scale(.9); }
+/*.shrink { -webkit-transform: scale(.9); }*/
 
 #wrapper { width: 100%; height: 100%; min-height: 500px; }
 
@@ -23,8 +23,9 @@ html, body { width: 100%; height: 100%; background-color: #FD686A; }
 #social a { margin-left: 26px; }
 #social a:hover { opacity: .5; }
 
-#main {/* padding-top: 54px;*/ padding-bottom: 150px; }
-#main h1 { color: #fff3e1; font: normal 87px "brandon-grotesque"; font-weight: 900; border-bottom: 20px solid #fff3e1; width: 690px; padding-bottom: 30px; letter-spacing: 2px; margin: 0 auto; width: 836px; }
+#main { padding-top: 70px; padding-bottom: 150px; }
+#main .headline { border-bottom: 20px solid #fff3e1; margin: 0 auto; width: 836px; padding-bottom: 51px; }
+#main .headline h1 { color: #fff3e1; font: normal 87px "brandon-grotesque"; font-weight: 900; letter-spacing: 2px; }
 #main form { padding-top: 90px; width: 836px; margin: 0 auto; width: 836px; }
 #main form p { color: #FFF3E2; font: normal 24px "brandon-grotesque"; font-weight: 900; letter-spacing: 2px; margin-bottom: 20px; }
 #main form .count { color: #FFF3E2; font: normal 24px "brandon-grotesque"; font-weight: 700; letter-spacing: 2px; text-align: right; }
@@ -33,6 +34,19 @@ html, body { width: 100%; height: 100%; background-color: #FD686A; }
 #main form input, #main form textarea { padding: 24px 0px 24px 39px; margin-bottom: 80px; border: none; background-color: #FFF3E2; color: #ff6767; font: normal 26px "brandon-grotesque"; font-weight: 400; letter-spacing: 2px; width: 794px; }
 #main form textarea.last { margin-bottom: 20px; }
 #main form .submit { background-color: #FFF3E2; color: #FD686A; font: normal 22px "brandon-grotesque"; font-weight: 700; padding: 12px 0px 12px 0px; width: 187px; text-align: center; cursor: pointer; }
+
+#main-tweets { padding-bottom: 150px; padding-top: 70px; }
+#main-tweets .headline { border-bottom: 20px solid #fff3e1; margin: 0 auto; width: 836px; padding-bottom: 51px; margin-bottom: 70px; position: relative; }
+#main-tweets .headline h1 { color: #fff3e1; font: normal 87px "brandon-grotesque"; font-weight: 900; letter-spacing: 2px; }
+#main-tweets .headline p { color: #fff3e1; font: normal 21px "brandon-grotesque"; font-weight: 700; letter-spacing: 2px; line-height: 35px; }
+#main-tweets .headline .button { cursor: pointer; position: absolute; top: 0px; right: -250px; width: 186px; height: 185px; background: url("../img/tweethere.png") top left no-repeat; }
+
+#tweets { width: 834px; margin: 0 auto; }
+#tweets .tweet { margin-bottom: 70px; position: relative; }
+#tweets .tweet .name { color: #FFF3E2; padding-left: 30px; margin-bottom: 18px; font: normal 22px "brandon-grotesque"; font-weight: 400; }
+#tweets .tweet .name span { font-weight: 200; }
+#tweets .tweet .copy { color: #FD686A; background: #FFF3E2; padding: 48px 0px 48px 36px; font: normal 26px "brandon-grotesque"; font-weight: 400;  }
+#tweets .tweet .time { color: #FFF3E2; position: absolute; right: -100px; bottom: 0px; font: normal 22px "brandon-grotesque"; font-weight: 400; line-height: 19px; }
 
 #wrapper.english .turk { display: none; }
 #wrapper.english .english { display: auto; }
