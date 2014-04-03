@@ -1,3 +1,21 @@
+function setSelectionRange(input, selectionStart, selectionEnd) {
+  if (input.setSelectionRange) {
+    input.focus();
+    input.setSelectionRange(selectionStart, selectionEnd);
+  }
+  else if (input.createTextRange) {
+    var range = input.createTextRange();
+    range.collapse(true);
+    range.moveEnd('character', selectionEnd);
+    range.moveStart('character', selectionStart);
+    range.select();
+  }
+}
+
+function setCaretToPos (input, pos) {
+  setSelectionRange(input, pos, pos);
+}
+
 function checkPostForURL(post){
     var matches = new Array();
     var urlexp = new RegExp("(^|[ \t\r\n])((http|https):(([A-Za-z0-9$_.+!*(),;/?:@&~=-])|%[A-Fa-f0-9]{2}){2,}(#([a-zA-Z0-9][a-zA-Z0-9$_.+!*(),;/?:@&~=%-]*))?([A-Za-z0-9$_+!*();/?:~-]))","g");
@@ -27,10 +45,11 @@ $(document).ready(function() {
 
 	$("#maketweet input").focus(function(){
 		if( $(this).val() == "@example") {
-			$(this).val("");
+			$(this).val("@");
+			setCaretToPos($("#maketweet input"), 1);
 		}
 	}).blur(function(){
-		if( $(this).val() == "" ) {
+		if( $(this).val() == "@" || $(this).val() == "" ) {
 			$(this).val("@example");
 		}
 	}).on('keyup', function(){
